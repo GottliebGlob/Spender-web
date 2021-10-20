@@ -1,9 +1,121 @@
 @import "../../styles/variables";
 
 .container {
-  min-height: 100vh;
   display: flex;
   background-color: $primary;
-  padding: 0;
+  padding: 0 0 20px 0;
   flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.topContainer {
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+
+    .mainTitle {
+      font-weight: bold;
+      color: $darkGold;
+      margin-right: 0.7rem;
+      padding-bottom: 1rem;
+    }
+
+    .mainTitleText {
+      color: white;
+    }
+  }
+
+  .firstBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $darkGold;
+    height: 80vh;
+
+    .badge {
+      width: 20rem;
+    }
+    .badgeButton {
+      margin-left: 10%;
+
+    }
+
+    .downloadButtonBlock {
+      margin: 2rem 0 2rem 2rem;
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+    }
+
+    .middleText {
+      margin-top: 2rem;
+    }
+
+    .logoWrapper {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+      img {
+        margin: 0;
+
+        padding-right: 4rem;
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+
+.card {
+  color: $primary;
+  height: 100%;
+  padding: 1rem;
+
+  .cardHead {
+
+    h6 {
+      margin-left: 1rem;
+    }
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.secContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  .secTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+
+    .secTitle {
+      font-weight: bold;
+      color: $darkGold;
+      padding-bottom: 1rem;
+      margin-right: 0.2rem;
+      margin-left: 0.7rem;
+    }
+
+    .secTitleText {
+      color: white;
+    }
+  }
 }
